@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.butterflames.com
-        username:  info@techpressions.com
+        username: info@techpressions.com
         password: TechPres@123
         
