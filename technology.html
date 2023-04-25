@@ -29,6 +29,29 @@
       .tech-box {
         height: 190px;
       }
+      .card {
+        position: relative;
+      }
+
+      .card-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .card:hover .card-img-overlay {
+        opacity: 1;
+      }
+      .mytech{
+        height: 143px;
+        width: 135px;
+        object-fit: center"
+      }
     </style>
   </head>
 
@@ -298,112 +321,573 @@
       <!-- Gallery Section -->
       <section class="">
         <div class="container">
+          <div class="alert alert-success float-left h3" role="alert">
+            Front end
+          </div>
+
           <div class="row g-3">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+              
               <div class="project-block">
                 <div class="inner-box">
                   <div class="image-box">
                     <figure class="image">
                       <a href=""><img src="images/tech/vuejs.png" alt="" /></a>
                     </figure>
-                    <!--<div class="info-box">
+                    <div class="info-box">
                       <a href="" class="read-more"
                         ><i class="fa fa-long-arrow-alt-right"></i
                       ></a>
                       <span class="cat">Graphics</span>
                       <h6 class="title">
-                        <a href=""
-                          >Digital marketing web</a
-                        >
+                        <a href="">Digital marketing web</a>
                       </h6>
-                    </div>-->
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>-->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Vue Js</h5>
+                </div>
+                <img
+                  class="card-img-top"
+                  src="images/tech/vuejs.png"
+                  alt="Card image cap"
+                />
+                <div class="card-footer text-muted text-center h3">Vue Js</div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <div class="inner-box">
-                  <div class="image-box">
-                    <figure class="image tech-box">
-                      <a href=""
-                        ><img
-                          src="images/tech/react.png"
-                          class="tech"
-                          alt="react"
-                      /></a>
-                    </figure>
-                  </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">React Js</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/react.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  React Js
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <div class="inner-box">
-                  <div class="image-box">
-                    <figure class="image tech-box">
-                      <a href=""
-                        ><img src="images/tech/html.png" alt="" class="tech"
-                      /></a>
-                    </figure>
-                  </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Jquery</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/jquery.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Jquery</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Javascript</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/js.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Javascript
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <div class="inner-box">
-                  <div class="image-box">
-                    <figure class="image tech-box">
-                      <a href=""
-                        ><img src="images/tech/css.png" class="tech" alt=""
-                      /></a>
-                    </figure>
-                  </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">
+                    Cascading Style Sheets
+                  </h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/css.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">CSS</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Flutter</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/flutter.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Flutter</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Bootstrap</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/bootstrap.svg"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Bootstrap
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <div class="inner-box">
-                  <div class="image-box">
-                    <figure class="image tech-box">
-                      <a href=""
-                        ><img
-                          src="images/tech/js.png"
-                          style="width: 100%; height: 100%"
-                          alt=""
-                      /></a>
-                    </figure>
-                  </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">
+                    Tailwind css
+                  </h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/tcss.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Tailwind css
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <div class="inner-box">
-                  <div class="image-box">
-                    <figure class="image">
-                      <a href=""><img src="images/tech/jquery.png" alt="" /></a>
-                    </figure>
-                  </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">HTML5</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/html.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">HTML5</div>
+              </div>
+            </div>
+            <br />
+            <div class="alert alert-success float-left h3" role="alert">
+              Back end
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Python</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/python.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Python</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Django</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/django.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Django</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">
+                    Django Rest API
+                  </h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/rest.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Django Rest API
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <!-- Project Block -->
-              <div class="project-block">
-                <figure class="image">
-                  <a href=""
-                    ><img src="images/tech/jquery.png" class="tech" alt=""
-                  /></a>
-                </figure>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Fast API</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/fastapi.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Fast API
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Flask</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/flask.png"
+                    alt="Card image cap"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Flask</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Node Js</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/node.svg"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Node Js</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">My SQL</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/sql.svg"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">My SQL</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Postgres</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/postgres.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Postgres
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">MongoDB</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top mytech"
+                    src="images/tech/mongo.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">MongoDB</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Redis</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/redis.jpg"
+                    alt="Card image cap"
+                    style="height: 143px; width: 300px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Redis</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Celery</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/celery.jpg"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Celery</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Gunicorn</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/gunicorn.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Gunicorn
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Nginx</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/nginx.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Nginx</div>
+              </div>
+            </div>
+            <br />
+            <div class="alert alert-success float-left h3" role="alert">
+              Cloud
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Jenkins</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/jenkins.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Jenkins</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">
+                    Google Cloud
+                  </h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/googlecloud.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Google Cloud
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">AWS</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/aws.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 138px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">AWS</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">
+                    Digital Ocean
+                  </h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/digital.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 350px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  Digital Ocean
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">AWS EC2</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/ec2.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 340%; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">AWS Ec2</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">AWS S3</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/s3.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 138px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">AWS S3</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Github</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/github.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 138px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Github</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">Gitlab</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/gitlab.png"
+                    alt="Card image cap"
+                    style="height: 143px; width: 138px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">Gitlab</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">BitBucket</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/bucket.webp"
+                    alt="Card image cap"
+                    style="height: 143px; width: 138px; object-fit: center"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  BitBucket
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <h5 class="card-title text-center text-white">MailChimp</h5>
+                </div>
+                <center>
+                  <img
+                    class="card-img-top"
+                    src="images/tech/mail.jpg"
+                    alt="Card image cap"
+                    style="height: 143px; width: 280px; object-fit: cover"
+                  />
+                </center>
+                <div class="card-footer text-muted text-center h3">
+                  MailChimp
+                </div>
               </div>
             </div>
           </div>
